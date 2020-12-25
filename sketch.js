@@ -19,6 +19,8 @@ function setup() {
 	packageSprite=createSprite(width/2, 80, 10,10);
 	packageSprite.addImage(packageIMG)
 	packageSprite.scale=0.2
+	
+	
 
 	helicopterSprite=createSprite(width/2, 200, 10,10);
 	helicopterSprite.addImage(helicopterIMG)
@@ -57,7 +59,7 @@ function draw() {
 function keyPressed() {
  if (keyCode === DOWN_ARROW) {
   
- package.Body.setStatic(false)
+ Matter.Body.isStatic(false)
 
 
     
